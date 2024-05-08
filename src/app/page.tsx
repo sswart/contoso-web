@@ -30,12 +30,11 @@ export default async function Home({
         outerClassName="bg-blend-multiply bg-center bg-hero-image h-80 bg-neutral-600"
         innerClassName=""
       >
-        <div className="text-zinc-100 pt-12 text-7xl font-black subpixel-antialiased">
+        <div className="text-zinc-100 pt-6 text-2xl font-black subpixel-antialiased">
           Contoso Outdoor Company
         </div>
-        <div className="text-zinc-100 mt-4 text-2xl">
-          Embrace Adventure with Contoso Outdoors - Your Ultimate Partner in
-          Exploring the Unseen!
+        <div className="text-zinc-100 mt-4 text-1xl">
+          Contoso is not real, look for Xebia instead!
         </div>
         <div className="text-zinc-100 mt-2 text-lg w-2/3">
           Choose from a variety of products to help you explore the outdoors.
@@ -47,7 +46,7 @@ export default async function Home({
       {categories.map((category, i) => (
         <Block
           key={i}
-          innerClassName="p-8"
+          innerClassName="p-4"
           outerClassName={clsx(i % 2 == 1 ? "bg-zinc-100" : "bg-inherit")}
         >
           <div className="text-5xl mb-3 font-semibold text-zinc-800">
